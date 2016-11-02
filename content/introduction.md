@@ -6,3 +6,7 @@ The first usage of the term Software Engineering was used by Anthony Oettinger i
 
 The software crisis in the 1960s,1970s and 1980s helped people realise the problems associated with software development due to the field's infancy. Projects were known to be costly and the lack of quality control at the time contributed to fraud, identity theft and even death (Therac-25 accident. Read more at: http://ieeexplore.ieee.org/document/274940/?reload=true&arnumber=274940).
 
+Researchers and firms scrambled to find a single solution by creating software tools to try and solve the software crisis. This was known as the Silver Bullet. By then, it was more expensive to maintain software than to develop a new system; an average project would pass its deadline by 50% and 75% of products that were delivered failed or were not used within the firm. Tools, discipline, methods, processes and professionalism were all scrutinised or developed on to find the silver bullet of Software Engineering. Fred Brooks of IBM at that time discussed that there would be no silver bullet as nothing could ever make productivity increase rapidly. After much debate, it was determined that no silver bullet would ever be found especially to solve multiple problems.
+
+In the past decade, an explosion of demand from smaller firms prompted the development of cheaper solutions which involved finding faster, more efficient methodologies that would improve the Software Engineering process.
+
