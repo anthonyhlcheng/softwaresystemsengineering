@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Introduction to Software Systems Engineering</title>
+    <title>Software Testing</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#analysis">General</a>
+                        <a class="page-scroll" href="#analysis">Overview</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#deployment">History</a>
@@ -73,9 +73,9 @@
     <header style="z-index:2;">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Introduction</h1>
+                <h1 id="homeHeading">Software Testing</h1>
                 <hr>
-                <p>Software Testing is an essential part of the software development process as it produces software bugs, 
+                <p>Software Testing is an essential part of the software development process as it produces software bugs,
                   defects or problems that can be fixed before the product is released onto the market.</p>
                 <div class="btn-group-vertical btn-group-custom">
                   <a href="#analysis" class="btn btn-primary btn-xl page-scroll">Overview</a>
@@ -97,11 +97,11 @@
                       <p class="text-faded">
                           Testing can help developers realise whether their program meets the requirements set by the stakeholders;
                           if it works as intended; if it can be installed in their environments without error; and if it meets certain
-                          standards.<sup id="onecf"><a href="#onec" class="page-scroll">1</a></sup> It is absolutely necessary to carry out
+                          standards.<sup id="onecf"><a href="#onec" class="page-scroll" style="color:#000;" >1</a></sup> It is absolutely necessary to carry out
                           testing to ensure the quality of the product has not suffered and that the product will not fail, as this could
                           be very costly to the company in the future.<br> <br>
                           It must be noted that testing cannot identify all defects or bugs in a program. Instead, it compares the behaviour and output
-                          of the product with oracles ("a mechanism for determining whether a test has passed or failed").<sup id="twocf"><a href="twoc">2</a></sup>
+                          of the product with oracles ("a mechanism for determining whether a test has passed or failed").<sup id="twocf"><a href="#twoc" class="page-scroll" style="color:#000;">2</a></sup>
                           This could be done with exact or approximate results; documentation; statistical results or even manual analysis - i.e. a human checks
                           whether the program works well).
                       </p>
@@ -118,13 +118,16 @@
                     <h2 class="section-heading text-center">History</h2>
                     <hr>
                     <div class="col-md-8 col-md-offset-2">
-                      <p>The first usage of the term Software Engineering was used by Anthony Oettinger in a letter in 1965 but the term only came into fruition in 1968<sup><a>1</a></sup> with the international conference as requested by the Study Group on Computer Science of the NATO Science Committee.<sup>2</sup><br><br>
-
-The software crisis in the 1960s, 1970s and 1980s helped people realise the problems associated with software development due to the field's infancy. Projects were known to be costly and the lack of quality control at the time contributed to fraud, identity theft and even death (Therac-25 accident)<sup>3</sup>.<br><br>
-
-Researchers and firms scrambled to find a single solution by creating software tools to try and solve the software crisis. This was known as the Silver Bullet. By then, it was more expensive to maintain software than to develop a new system; an average project would pass its deadline by 50% and 75% of products that were delivered failed or were not used within the firm.<sup>4</sup> Tools, discipline, methods, processes and professionalism were all scrutinised or developed on to find the silver bullet of Software Engineering. Fred Brooks of IBM at that time discussed that there would be no silver bullet as nothing could ever make productivity increase rapidly. After much debate, it was determined that no silver bullet would ever be found especially to solve multiple problems.<br><br>
-
-In the past decade, an explosion of demand from smaller firms prompted the development of cheaper solutions which involved finding faster, more efficient methodologies that would improve the Software Engineering process.</p>
+                      <p>
+                        From the start of software development up until 1956, testing and debugging a program were the same thing.<br>
+                        From 1957 to 1978, the two started to separate with testing was more to do with whether the program satisfied the requirements.
+                        This was known as the Demonstration oriented period.<br>
+                        In 1979, it was formalised by Glenford J. Myers that the two should be clearly defined as separate processes. This led onto many
+                        in the software development community wanting to break down what was then debugging, even further into smaller subtopics.<br>
+                        From 1979 to 1982, began the destruction phase, where the whole point of testing was to find errors.<br>
+                        From 1983-1987, the evaluation phase began where it started to focus more on quality and evaluation of the product.<br>
+                        From 1988, the prevention phase was introduced where testing had to ensure that defects were found and prevented and the overall product met its requirements.
+                      </p>
                     </div>
                 </div>
             </div>
@@ -189,9 +192,9 @@ In the past decade, an explosion of demand from smaller firms prompted the devel
         <div class="text-align:left;">
             <h2 class="section-heading text-center" style="padding-top:20px;" id="references">References</h2>
             <hr class="light">
-            <p><sup id="onec"><a href="#onecf" class="page-scroll">1 </a></sup>ISTQB Exam Certification. (n.d.) What is Software Testing. Retrieved 03, 11, 2016 , from http://istqbexamcertification.com/what-is-a-software-testing/
+            <p><sup id="onec"><a href="#onecf" class="page-scroll" style="color:#FFFFFF;">1 </a></sup>ISTQB Exam Certification. (n.d.) What is Software Testing. Retrieved 03, 11, 2016 , from http://istqbexamcertification.com/what-is-a-software-testing/
               <br><br>
-                <sup id="twoc"><a href="#twocf" class="page-scroll">2 </a></sup>Wikipedia. (2016) Oracle (software testing. Retrieved 03, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
+                <sup id="twoc"><a href="#twocf" class="page-scroll" style="color:#FFFFFF;">2 </a></sup>Wikipedia. (2016) Oracle (software testing. Retrieved 03, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
                 <br><br>
                 <sup>3 </sup>Ieeexplore.ieee.org. (2016). IEEE Xplore Document - An investigation of the Therac-25 accidents. [online] Available at: http://ieeexplore.ieee.org/document/274940/?reload=true&arnumber=274940) [Accessed 3 Nov. 2016].<br><br>
                 <sup>4 </sup>En.wikipedia.org. (2016). History of software engineering. [online] Available at: https://en.wikipedia.org/wiki/History_of_software_engineering [Accessed 2 Nov. 2016].
