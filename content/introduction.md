@@ -10,3 +10,22 @@ Researchers and firms scrambled to find a single solution by creating software t
 
 In the past decade, an explosion of demand from smaller firms prompted the development of cheaper solutions which involved finding faster, more efficient methodologies that would improve the Software Engineering process.
 
+Subtopics
+
+Within software systems engineering, there are 15 different subtopics.
+
+Requirements Engineering
+Software Design
+Software Construction
+Software Testing
+Software Maintenance
+Software Configuration Management
+Software Engineering Management
+Software Development Process
+Software Quality
+Professional Practice
+Software Engineering Economics
+Computing Foundations
+Mathematical Foundations
+Engineering Foundations
+
