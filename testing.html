@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Introduction to Software Systems Engineering</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+    <a class="page-scroll" href="#page-top">
+        <div id="toTop" style="z-index:1;font-size: 24px; color:#000; text-align:center; vertical-align:middle; position: fixed; bottom: 20px; right:20px; border-radius:10px; border: 2px solid #000; height:50px; width:50px; background-color: #FFFFFF;">
+            ↑
+        </div>
+    </a>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Software Systems Engineering</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#analysis">General</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#deployment">History</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#architecture">SubTopics</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#references">References</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header style="z-index:2;">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Introduction</h1>
+                <hr>
+                <p>Software Testing is an essential part of the software development process as it produces software bugs, 
+                  defects or problems that can be fixed before the product is released onto the market.</p>
+                <div class="btn-group-vertical btn-group-custom">
+                  <a href="#analysis" class="btn btn-primary btn-xl page-scroll">Overview</a>
+                  <a href="#deployment" class="btn btn-primary btn-xl page-scroll">History</a>
+                  <a href="#architecture" class="btn btn-primary btn-xl page-scroll">Subtopics</a>
+                  <a href="#references" class="btn btn-primary btn-xl page-scroll">References</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="analysis">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">Overview</h2>
+                    <hr class="light">
+                    <div class="col-md-8 col-md-offset-2">
+                      <p class="text-faded">
+                          Testing can help developers realise whether their program meets the requirements set by the stakeholders;
+                          if it works as intended; if it can be installed in their environments without error; and if it meets certain
+                          standards.<sup id="onecf"><a href="#onec" class="page-scroll">1</a></sup> It is absolutely necessary to carry out
+                          testing to ensure the quality of the product has not suffered and that the product will not fail, as this could
+                          be very costly to the company in the future.<br> <br>
+                          It must be noted that testing cannot identify all defects or bugs in a program. Instead, it compares the behaviour and output
+                          of the product with oracles ("a mechanism for determining whether a test has passed or failed").<sup id="twocf"><a href="twoc">2</a></sup>
+                          This could be done with exact or approximate results; documentation; statistical results or even manual analysis - i.e. a human checks
+                          whether the program works well).
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="deployment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">History</h2>
+                    <hr>
+                    <div class="col-md-8 col-md-offset-2">
+                      <p>The first usage of the term Software Engineering was used by Anthony Oettinger in a letter in 1965 but the term only came into fruition in 1968<sup><a>1</a></sup> with the international conference as requested by the Study Group on Computer Science of the NATO Science Committee.<sup>2</sup><br><br>
+
+The software crisis in the 1960s, 1970s and 1980s helped people realise the problems associated with software development due to the field's infancy. Projects were known to be costly and the lack of quality control at the time contributed to fraud, identity theft and even death (Therac-25 accident)<sup>3</sup>.<br><br>
+
+Researchers and firms scrambled to find a single solution by creating software tools to try and solve the software crisis. This was known as the Silver Bullet. By then, it was more expensive to maintain software than to develop a new system; an average project would pass its deadline by 50% and 75% of products that were delivered failed or were not used within the firm.<sup>4</sup> Tools, discipline, methods, processes and professionalism were all scrutinised or developed on to find the silver bullet of Software Engineering. Fred Brooks of IBM at that time discussed that there would be no silver bullet as nothing could ever make productivity increase rapidly. After much debate, it was determined that no silver bullet would ever be found especially to solve multiple problems.<br><br>
+
+In the past decade, an explosion of demand from smaller firms prompted the development of cheaper solutions which involved finding faster, more efficient methodologies that would improve the Software Engineering process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding bg-primary" id="architecture">
+        <div class="container-fluid">
+            <h2 class="section-heading text-center" style="padding-top:20px;">SubTopics</h2>
+            <hr class="light">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6 text-gallery">
+                  <p>
+                    Within software systems engineering, there are 15 different subtopics.
+                    <br><br>
+                    Requirements Engineering
+                    <br>
+                    Software Design  <br>
+                    Software Construction  <br>
+                    Software Testing <br>
+                    Software Maintenance <br>
+                    Software Configuration Management <br>
+                    Software Engineering Management <br>
+                    Software Development Process <br>
+                    Software Quality <br>
+                    Professional Practice <br>
+                    Software Engineering Economics <br>
+                    Computing Foundations <br>
+                    Mathematical Foundations <br>
+                    Engineering Foundations <br>
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    MVC Architecture
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Agile Architecture
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="no-padding bg-primary" id="references">
+    <aside class="bg-dark">
+        <div class="text-align:left;">
+            <h2 class="section-heading text-center" style="padding-top:20px;" id="references">References</h2>
+            <hr class="light">
+            <p><sup id="onec"><a href="#onecf" class="page-scroll">1 </a></sup>ISTQB Exam Certification. (n.d.) What is Software Testing. Retrieved 03, 11, 2016 , from http://istqbexamcertification.com/what-is-a-software-testing/
+              <br><br>
+                <sup id="twoc"><a href="#twocf" class="page-scroll">2 </a></sup>Wikipedia. (2016) Oracle (software testing. Retrieved 03, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
+                <br><br>
+                <sup>3 </sup>Ieeexplore.ieee.org. (2016). IEEE Xplore Document - An investigation of the Therac-25 accidents. [online] Available at: http://ieeexplore.ieee.org/document/274940/?reload=true&arnumber=274940) [Accessed 3 Nov. 2016].<br><br>
+                <sup>4 </sup>En.wikipedia.org. (2016). History of software engineering. [online] Available at: https://en.wikipedia.org/wiki/History_of_software_engineering [Accessed 2 Nov. 2016].
+            </p>
+        </div>
+    </aside>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
+
+    Contact GitHub API Training Shop Blog About
+
+    © 2016 GitHub, Inc. Terms Privacy Security Status Help
