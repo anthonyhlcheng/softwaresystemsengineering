@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Software Testing</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+    <a class="page-scroll" href="#page-top">
+        <div id="toTop" style="z-index:1;font-size: 24px; color:#000; text-align:center; vertical-align:middle; position: fixed; bottom: 20px; right:20px; border-radius:10px; border: 2px solid #000; height:50px; width:50px; background-color: #FFFFFF;">
+            ↑
+        </div>
+    </a>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Software Systems Engineering</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#tools">Tools</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#architecture">SubTopics</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#references">References</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header style="z-index:2;">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Software Analysis</h1>
+                <hr>
+                <p>Software Analysis is a way of checking how good your software application is, in terms of how well it performs the tasks it’s supposed to perform; how robust it is and how fast it does those tasks.</p>
+                <div class="btn-group-vertical btn-group-custom">
+                  <a href="#overview" class="btn btn-primary btn-xl page-scroll">Overview</a>
+                  <a href="#tools" class="btn btn-primary btn-xl page-scroll">Tools</a>
+                  <a href="#architecture" class="btn btn-primary btn-xl page-scroll">Similarities</a>
+                  <a href="#references" class="btn btn-primary btn-xl page-scroll">References</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">Overview</h2>
+                    <hr class="light">
+                    <div class="col-md-8 col-md-offset-2">
+                      <p class="text-faded">
+                        Software Analysis is done by extracting the models of software systems and these models are simulated. This can provide insight into some specific software systems and provide data to create general insights. An example of this may improving a web searching application by analysing the algorithm that it uses and possibly changing it to a better one. There are research being done to create software that can automate the process of software analysis.  
+                        <br><br>
+                        There are two types of software analysis:
+                        <br>
+                        •	Instrumentation <br>
+                        It involves placing markers in the code to monitor the level of the code’s performance. This is done by using instructions to log activity of specific parts of the system. This is useful to analyse areas with potential problems while leaving the checked areas. It does have limitations, it can only be used if the code that is to be checked is actually executed. If the program never reaches that point, then instrumentation at that point will not collect any data. Some types of instrumentation can cause the execution time to increase.
+                        <br><br>
+                        •	Code Sampling
+                        <br>
+                        	This is done by inspecting the execution of code at fixed intervals.  This is less accurate then Instrumentation but gives a wider coverage of the code. Since the method is less accurate, there is more of a chance for errors to be missed.
+
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">Tools</h2>
+                    <hr>
+                    <div class="col-md-8 col-md-offset-2">
+                      <p>
+                        There are various types of software analysis tools. They are Code Coverage; Instruction Trace; Memory analysis and Performance analysis.<br><br>
+                        •	Code coverage measures how much code has been executed<br>
+                        •	Instruction trace creates a log of exactly what happens as the code runs.<br>
+                        •	Memory analysis looks at the memory usage of the code and finds errors.<br>
+                        •	Performance analysis finds performance bottle necks to improve execution speed.
+
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding bg-primary" id="architecture">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h2 class="section-heading text-center">More Details</h2>
+                  <hr>
+                  <div class="col-md-8 col-md-offset-2">
+                    <p>
+                      This is similar to a method of testing software called debugging. Debugging is used to find a known problem in the code. 
+                      It also involves tracing the code execution and monitoring the variables.
+                      <br><br>
+                      The main difference between software analysis and debugging is that software analysis can be carried out while the program is running and not have to pause. 
+                      This is especially important if the software is an embedded one where the system cannot always be halted.
+                      <br><br>
+                      The advantages of using software analysis are: accelerating the development of software, improving the software quality and creating software that gives maximum performance. 
+                      By analysing software, developers can write software in a shorter time. More efficient software can be created, which is heavily used in real time systems that require it.
+
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="no-padding bg-primary" id="research">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h2 class="section-heading text-center">Research</h2>
+                  <hr>
+                  <div class="col-md-8 col-md-offset-2">
+                    <p>
+                      There is currently research being cared out in the Centre for Research and Testing (CREST) into new methods of software analysis. 
+                      One method they found is genetic improvement. It involves treating the source code of a program as genetic material. 
+                      This means that small edits are made to the source code and then algorithms are used to find versions of the code that are improved from the original. 
+                      This allows programs to be upgraded without losing core functionality. An example of this is Java byte code produced from existing human written programs being improved using genetic improvement.
+                      <br>
+                      Genetic improvement can be used to target areas of mobile apps which can be improved such as energy and bandwidth usage. 
+                      It can also create multiple versions of a program that are tailored to a particular use. Which can make producing bespoke software much easier.
+                      <br><br>
+                      <h3>Key Researchers</h3>
+                      Paolo Tonella<br>
+                      Federica Sarro<br>
+                      Mohamed Nassim Seghir<br>
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="no-padding bg-primary" id="references">
+    <aside class="bg-dark">
+        <div class="text-align:left;">
+            <h2 class="section-heading text-center" style="padding-top:20px;" id="references">References</h2>
+            <hr class="light">
+            <p><sup id="onec"><a href="#onecf" class="page-scroll" style="color:#FFFFFF;">1 </a></sup>ISTQB Exam Certification. (n.d.) What is Software Testing. Retrieved 03, 11, 2016 , from http://istqbexamcertification.com/what-is-a-software-testing/
+              <br><br>
+                <sup id="twoc"><a href="#twocf" class="page-scroll" style="color:#FFFFFF;">2 </a></sup>Wikipedia. (2016) Oracle (software testing. Retrieved 03, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
+                <br><br>
+                <sup id="threec"><a href="#threecf" class="page-scroll" style="color:#FFFFFF;">3 </a></sup>Wikiversity. (2016) Software testing/History of testing. Retrieved 03, 11, 2016 , from https://en.wikiversity.org/wiki/Software_testing/History_of_testing
+
+                <sup>4 </sup>En.wikipedia.org. (2016). History of software engineering. [online] Available at: https://en.wikipedia.org/wiki/History_of_software_engineering [Accessed 2 Nov. 2016].
+            </p>
+        </div>
+    </aside>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
+
+    Contact GitHub API Training Shop Blog About
+
+    © 2016 GitHub, Inc. Terms Privacy Security Status Help
