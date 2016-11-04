@@ -52,10 +52,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#overview">Overview</a>
+                        <a class="page-scroll" href="#analysis">Overview</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#tools">Tools</a>
+                        <a class="page-scroll" href="#deployment">History</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#architecture">SubTopics</a>
@@ -73,20 +73,21 @@
     <header style="z-index:2;">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Software Analysis</h1>
+                <h1 id="homeHeading">Software Testing</h1>
                 <hr>
-                <p>Software Analysis is a way of checking how good your software application is, in terms of how well it performs the tasks it’s supposed to perform; how robust it is and how fast it does those tasks.</p>
+                <p>Software Testing is an essential part of the software development process as it produces software bugs,
+                  defects or problems that can be fixed before the product is released onto the market.</p>
                 <div class="btn-group-vertical btn-group-custom">
-                  <a href="#overview" class="btn btn-primary btn-xl page-scroll">Overview</a>
-                  <a href="#tools" class="btn btn-primary btn-xl page-scroll">Tools</a>
-                  <a href="#architecture" class="btn btn-primary btn-xl page-scroll">Similarities</a>
+                  <a href="#analysis" class="btn btn-primary btn-xl page-scroll">Overview</a>
+                  <a href="#deployment" class="btn btn-primary btn-xl page-scroll">History</a>
+                  <a href="#architecture" class="btn btn-primary btn-xl page-scroll">Subtopics</a>
                   <a href="#references" class="btn btn-primary btn-xl page-scroll">References</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="overview">
+    <section class="bg-primary" id="analysis">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -94,17 +95,15 @@
                     <hr class="light">
                     <div class="col-md-8 col-md-offset-2">
                       <p class="text-faded">
-                        Software Analysis is done by extracting the models of software systems and these models are simulated. This can provide insight into some specific software systems and provide data to create general insights. An example of this may improving a web searching application by analysing the algorithm that it uses and possibly changing it to a better one. There are research being done to create software that can automate the process of software analysis.  
-                        <br><br>
-                        There are two types of software analysis:
-                        <br>
-                        •	Instrumentation <br>
-                        It involves placing markers in the code to monitor the level of the code’s performance. This is done by using instructions to log activity of specific parts of the system. This is useful to analyse areas with potential problems while leaving the checked areas. It does have limitations, it can only be used if the code that is to be checked is actually executed. If the program never reaches that point, then instrumentation at that point will not collect any data. Some types of instrumentation can cause the execution time to increase.
-                        <br><br>
-                        •	Code Sampling
-                        <br>
-                        	This is done by inspecting the execution of code at fixed intervals.  This is less accurate then Instrumentation but gives a wider coverage of the code. Since the method is less accurate, there is more of a chance for errors to be missed.
-
+                          Testing can help developers realise whether their program meets the requirements set by the stakeholders;
+                          if it works as intended; if it can be installed in their environments without error; and if it meets certain
+                          standards.<sup id="onecf"><a href="#onec" class="page-scroll" style="color:#000;" >1</a></sup> It is absolutely necessary to carry out
+                          testing to ensure the quality of the product has not suffered and that the product will not fail, as this could
+                          be very costly to the company in the future.<br> <br>
+                          It must be noted that testing cannot identify all defects or bugs in a program. Instead, it compares the behaviour and output
+                          of the product with oracles ("a mechanism for determining whether a test has passed or failed").<sup id="twocf"><a href="#twoc" class="page-scroll" style="color:#000;">2</a></sup>
+                          This could be done with exact or approximate results; documentation; statistical results or even manual analysis - i.e. a human checks
+                          whether the program works well).
                       </p>
                     </div>
                 </div>
@@ -112,20 +111,22 @@
         </div>
     </section>
 
-    <section id="tools">
+    <section id="deployment">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="section-heading text-center">Tools</h2>
+                    <h2 class="section-heading text-center">History</h2>
                     <hr>
                     <div class="col-md-8 col-md-offset-2">
                       <p>
-                        There are various types of software analysis tools. They are Code Coverage; Instruction Trace; Memory analysis and Performance analysis.<br><br>
-                        •	Code coverage measures how much code has been executed<br>
-                        •	Instruction trace creates a log of exactly what happens as the code runs.<br>
-                        •	Memory analysis looks at the memory usage of the code and finds errors.<br>
-                        •	Performance analysis finds performance bottle necks to improve execution speed.
-
+                        From the start of software development up until 1956, testing and debugging a program were the same thing.<br>
+                        From 1957 to 1978, the two started to separate with testing was more to do with whether the program satisfied the requirements.
+                        This was known as the Demonstration oriented period.<br>
+                        In 1979, it was formalised by Glenford J. Myers that the two should be clearly defined as separate processes. This led onto many
+                        in the software development community wanting to break down what was then debugging, even further into smaller subtopics.<br>
+                        From 1979 to 1982, began the destruction phase, where the whole point of testing was to find errors.<br>
+                        From 1983-1987, the evaluation phase began where it started to focus more on quality and evaluation of the product.<br>
+                        From 1988, the prevention phase was introduced where testing had to ensure that defects were found and prevented and the overall product met its requirements.<sup id="threecf"><a href="#threec" class="page-scroll" style="color:#000;">3</a></sup>
                       </p>
                     </div>
                 </div>
@@ -134,53 +135,57 @@
     </section>
 
     <section class="no-padding bg-primary" id="architecture">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <h2 class="section-heading text-center">More Details</h2>
-                  <hr>
-                  <div class="col-md-8 col-md-offset-2">
-                    <p>
-                      This is similar to a method of testing software called debugging. Debugging is used to find a known problem in the code. 
-                      It also involves tracing the code execution and monitoring the variables.
-                      <br><br>
-                      The main difference between software analysis and debugging is that software analysis can be carried out while the program is running and not have to pause. 
-                      This is especially important if the software is an embedded one where the system cannot always be halted.
-                      <br><br>
-                      The advantages of using software analysis are: accelerating the development of software, improving the software quality and creating software that gives maximum performance. 
-                      By analysing software, developers can write software in a shorter time. More efficient software can be created, which is heavily used in real time systems that require it.
-
-                    </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </section>
-    <section class="no-padding bg-primary" id="research">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <h2 class="section-heading text-center">Research</h2>
-                  <hr>
-                  <div class="col-md-8 col-md-offset-2">
-                    <p>
-                      There is currently research being cared out in the Centre for Research and Testing (CREST) into new methods of software analysis. 
-                      One method they found is genetic improvement. It involves treating the source code of a program as genetic material. 
-                      This means that small edits are made to the source code and then algorithms are used to find versions of the code that are improved from the original. 
-                      This allows programs to be upgraded without losing core functionality. An example of this is Java byte code produced from existing human written programs being improved using genetic improvement.
-                      <br>
-                      Genetic improvement can be used to target areas of mobile apps which can be improved such as energy and bandwidth usage. 
-                      It can also create multiple versions of a program that are tailored to a particular use. Which can make producing bespoke software much easier.
-                      <br><br>
-                      <h3>Key Researchers</h3>
-                      Paolo Tonella<br>
-                      Federica Sarro<br>
-                      Mohamed Nassim Seghir<br>
-                    </p>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <div class="container-fluid">
+            <h2 class="section-heading text-center" style="padding-top:20px;">SubTopics</h2>
+            <hr class="light">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6 text-gallery">
+                  <p>
+                    Within software systems engineering, there are 15 different subtopics.
+                    <br><br>
+                    Requirements Engineering
+                    <br>
+                    Software Design  <br>
+                    Software Construction  <br>
+                    Software Testing <br>
+                    Software Maintenance <br>
+                    Software Configuration Management <br>
+                    Software Engineering Management <br>
+                    Software Development Process <br>
+                    Software Quality <br>
+                    Professional Practice <br>
+                    Software Engineering Economics <br>
+                    Computing Foundations <br>
+                    Mathematical Foundations <br>
+                    Engineering Foundations <br>
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    MVC Architecture
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Agile Architecture
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="no-padding bg-primary" id="references">
     <aside class="bg-dark">
