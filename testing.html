@@ -32,10 +32,10 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" style="height:100%; overflow:auto;">
     <a class="page-scroll" href="#page-top">
-        <div id="toTop" style="-webkit-transform: translateZ(0); -webkit-backface-visibility: hidden; z-index:1;font-size: 24px; color:#000; text-align:center; vertical-align:middle; position: fixed; bottom: 5%; right:5%; border-radius:10px; border: 2px solid #000; height:50px; width:50px; background-color: #FFFFFF;">
-            ↑
+      <div id="toTop" style="z-index:1;font-size: 24px; color:#000; text-align:center; vertical-align:middle; position: fixed; bottom: 20px; right:20px; border-radius:10px; border: 2px solid #000; height:50px; width:50px; background-color: #FFFFFF;">
+          ↑
         </div>
     </a>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -92,7 +92,8 @@
                   <a href="#levels" class="btn btn-primary btn-xl page-scroll">Test Levels</a>
                   <a href="#process" class="btn btn-primary btn-xl page-scroll">Processes</a>
                   <a href="#automation" class="btn btn-primary btn-xl page-scroll">Automation</a>
-                  <a href="#people" class="btn btn-primary btn-xl page-scroll">People</a>
+                  <a href="#research" class="btn btn-primary btn-xl page-scroll">Research</a>
+                  <a href="#researchers" class="btn btn-primary btn-xl page-scroll">People</a>
                   <a href="#references" class="btn btn-primary btn-xl page-scroll">References</a>
                 </div>
             </div>
@@ -244,62 +245,37 @@
                         A lot of research has been done within software testing, mainly to do with automation and tools associated with it. The most recent project would be RE-COST -
                         REducing the Cost of Oracles for Software Testing. As explained before, an oracle is "a mechanism for determining whether a test has passed or failed"<sup id="sevencf"><a href="#sevenc" class="page-scroll" style="color:#000;">7</a></sup>.
                         Determining whether the correct behaviour is achieved that may be simple for humans but harder for the software to decide - this is called the oracle problem.<sup id="eightcf"><a href="#eightc" class="page-scroll" style="color:#000;">8</a></sup>
-                        What RE-COST will do is develop Search Based Optimisation techniques to solve the Oracle Cost problem.
+                        What RE-COST will do is develop Search Based Optimisation techniques to solve the Oracle Cost problem. It aims to reduce the number of test cases and evaluation effort and reduce the cognition
+                        time.<br><br>
+                        Currently, most of the testing done is done manually as the software may incorrectly identify some behaviour of the program. However, it requires a lot of time and effort for humans to get it right.
+                        Therefore, it is essential that automation of some of these tasks are to be carried out as this can drastically improve reliability. Researchers have been making tools to extract as many realistic test cases
+                        from web services and use such cases to create a 'one size fits all' fault localisation algorithm.<br><br>
+                        The whole point of RE-COST is to have the most widespread impact on software testing. So it will likely affect up to 50% of people employed in software testing, as well as improving the software applications
+                        throughout households, businesses and industries. Not only will it be affecting the quality of software on desktops or other more visible and more common devices but it will also affect transportation,
+                        health, military devices and building infrastructure globally.<sup id="ninecf"><a href="#ninec" class="page-scroll" style="color:#000;">9</a></sup><br><br>
+                        Researchers on RE-COST include Prof Harman, Dr Clark and Dr McMinn with Berner and Mattner, Motorola and Sogeti UK Ltd as project partners.
                       </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="no-padding bg-primary" id="architecture">
+    <section class="no-padding bg-primary" id="researchers">
         <div class="container-fluid">
-            <h2 class="section-heading text-center" style="padding-top:20px;">SubTopics</h2>
+            <h2 class="section-heading text-center" style="padding-top:20px;">Key Researchers</h2>
             <hr class="light">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6 text-gallery">
-                  <p>
-                    Within software systems engineering, there are 15 different subtopics.
-                    <br><br>
-                    Requirements Engineering
-                    <br>
-                    Software Design  <br>
-                    Software Construction  <br>
-                    Software Testing <br>
-                    Software Maintenance <br>
-                    Software Configuration Management <br>
-                    Software Engineering Management <br>
-                    Software Development Process <br>
-                    Software Quality <br>
-                    Professional Practice <br>
-                    Software Engineering Economics <br>
-                    Computing Foundations <br>
-                    Mathematical Foundations <br>
-                    Engineering Foundations <br>
-                  </p>
-                </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/Harman.jpg" style="height:300px;" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    MVC Architecture
+                                    Mark Harman
                                 </div>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Agile Architecture
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -309,21 +285,23 @@
         <div class="text-align:left;">
             <h2 class="section-heading text-center" style="padding-top:20px;" id="references">References</h2>
             <hr class="light">
-            <p><sup id="onec"><a href="#onecf" class="page-scroll" style="color:#FFFFFF;">1 </a></sup>ISTQB Exam Certification. (n.d.) What is Software Testing. Retrieved 03, 11, 2016 , from http://istqbexamcertification.com/what-is-a-software-testing/
+            <p><sup id="onec"><a href="#onecf" class="page-scroll" style="color:#FFFFFF;">  1 </a></sup>ISTQB Exam Certification. (n.d.) What is Software Testing. Retrieved 03, 11, 2016 , from http://istqbexamcertification.com/what-is-a-software-testing/
               <br><br>
-                <sup id="twoc"><a href="#twocf" class="page-scroll" style="color:#FFFFFF;">2 </a></sup>Wikipedia. (2016) Oracle (software testing. Retrieved 03, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
+                <sup id="twoc"><a href="#twocf" class="page-scroll" style="color:#FFFFFF;"> 2 </a></sup>Wikipedia. (2016) Oracle (software testing. Retrieved 03, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
                 <br><br>
-                <sup id="threec"><a href="#threecf" class="page-scroll" style="color:#FFFFFF;">3 </a></sup>Wikiversity. (2016) Software testing/History of testing. Retrieved 03, 11, 2016 , from https://en.wikiversity.org/wiki/Software_testing/History_of_testing
+                <sup id="threec"><a href="#threecf" class="page-scroll" style="color:#FFFFFF;"> 3 </a></sup>Wikiversity. (2016) Software testing/History of testing. Retrieved 03, 11, 2016 , from https://en.wikiversity.org/wiki/Software_testing/History_of_testing
                 <br><br>
-                <sup id="fourc"><a href="#fourcf" class="page-scroll" style="color:#FFFFFF;">4 </a></sup>Ulf Eriksson. (2016) Differences between the different levels of tests. Retrieved 05, 11, 2016 , from http://reqtest.com/uncategorized/differences-between-different-test-levels/
+                <sup id="fourc"><a href="#fourcf" class="page-scroll" style="color:#FFFFFF;"> 4 </a></sup>Ulf Eriksson. (2016) Differences between the different levels of tests. Retrieved 05, 11, 2016 , from http://reqtest.com/uncategorized/differences-between-different-test-levels/
                 <br><br>
-                <sup id="fivec"><a href="#fivecf" class="page-scroll" style="color:#FFFFFF;">5 </sup>Wikipedia. (2016) Software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Software_testing#Testing_levels
+                <sup id="fivec"><a href="#fivecf" class="page-scroll" style="color:#FFFFFF;"> 5 </sup>Wikipedia. (2016) Software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Software_testing#Testing_levels
                   <br><br>
-                <sup id="sixc"><a href="#sixcf" class="page-scroll" style="color:#FFFFFF;">6 </sup>Wikipedia. (2016) Software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Software_testing#Testing_levels
+                <sup id="sixc"><a href="#sixcf" class="page-scroll" style="color:#FFFFFF;"> 6 </sup>Wikipedia. (2016) Software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Software_testing#Testing_levels
                   <br><br>
-                <sup id="sevenc"><a href="#sevencf" class="page-scroll" style="color:#FFFFFF;">7 </sup>Wikipedia. (2016) Oracle (software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
+                <sup id="sevenc"><a href="#sevencf" class="page-scroll" style="color:#FFFFFF;"> 7 </sup>Wikipedia. (2016) Oracle (software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
                   <br><br>
-                  <sup id="eightc"><a href="#eightcf" class="page-scroll" style="color:#FFFFFF;">8 </sup>EPSRC. (2016) RE-COST: REducing the Cost of Oracles for Software Testing. Retrieved 05, 11, 2016 , from http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/I010165/1
+                  <sup id="eightc"><a href="#eightcf" class="page-scroll" style="color:#FFFFFF;"> 8 </sup>EPSRC. (2016) RE-COST: REducing the Cost of Oracles for Software Testing. Retrieved 05, 11, 2016 , from http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/I010165/1
+                    <br><br>
+                    <sup id="ninec"><a href="#ninecf" class="page-scroll" style="color:#FFFFFF;"> 9 </sup>Rcuk. (2016) Website Title. Retrieved 05, 11, 2016 , from http://gtr.rcuk.ac.uk/projects?ref=EP%2FI010165%2F1
 
             </p>
         </div>
