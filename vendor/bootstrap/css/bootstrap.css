@@ -1588,9 +1588,8 @@ pre code {
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+  body > .container { overflow: hidden; } /* fix */
+  body > .container > * { overflow: visible; } /* reset back to normal */
 }
 @media (min-width: 992px) {
   .container {
