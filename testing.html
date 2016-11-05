@@ -11,7 +11,7 @@
     <title>Software Testing</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -34,7 +34,7 @@
 
 <body id="page-top">
     <a class="page-scroll" href="#page-top">
-        <div id="toTop" style="z-index:1;font-size: 24px; color:#000; text-align:center; vertical-align:middle; position: fixed; bottom: 20px; right:20px; border-radius:10px; border: 2px solid #000; height:50px; width:50px; background-color: #FFFFFF;">
+        <div id="toTop" style="z-index:1;font-size: 24px; color:#000; text-align:center; vertical-align:middle; position: fixed; bottom: 5%; right:5%; border-radius:10px; border: 2px solid #000; height:50px; width:50px; background-color: #FFFFFF;">
             ↑
         </div>
     </a>
@@ -45,7 +45,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.html">Software Systems Engineering</a>
+                <a class="navbar-brand page-scroll" href="index.html">Software Engineering</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,7 +58,16 @@
                         <a class="page-scroll" href="#deployment">History</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#architecture">SubTopics</a>
+                        <a class="page-scroll" href="#levels">Levels</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#process">Processes</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#automation">Automation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#people">People</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#references">References</a>
@@ -80,7 +89,10 @@
                 <div class="btn-group-vertical btn-group-custom">
                   <a href="#analysis" class="btn btn-primary btn-xl page-scroll">Overview</a>
                   <a href="#deployment" class="btn btn-primary btn-xl page-scroll">History</a>
-                  <a href="#architecture" class="btn btn-primary btn-xl page-scroll">Subtopics</a>
+                  <a href="#levels" class="btn btn-primary btn-xl page-scroll">Test Levels</a>
+                  <a href="#process" class="btn btn-primary btn-xl page-scroll">Processes</a>
+                  <a href="#automation" class="btn btn-primary btn-xl page-scroll">Automation</a>
+                  <a href="#people" class="btn btn-primary btn-xl page-scroll">People</a>
                   <a href="#references" class="btn btn-primary btn-xl page-scroll">References</a>
                 </div>
             </div>
@@ -133,7 +145,112 @@
             </div>
         </div>
     </section>
+    <section class="bg-primary" id="levels">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">Testing Levels</h2>
+                    <hr class="light">
+                    <div class="col-md-8 col-md-offset-2">
+                      <p class="text-faded">
+                          Test levels are a hierarchy that uses different kinds of tests as the project progresses. There are four different levels that are part of the standard. Unit Testing; Integration Testing
+                          System Testing and Acceptance Testing. As shown in the diagram below, the different tests are designed for more complex items as you go further into developing a project.
+                      </p>
+                      <img src="http://softwaresystemsengineering.azurewebsites.net/img/test.png" style="width:100%;"/>
+                      <br>
+                      <br>
+                      <p class="text-faded">
+                        Unit Testing: <br>
+                        Unit testing aims to verify each component of the software by separating it from the rest of the code and performing tests that show that it is in full working order.
+                        <br>
+                        <br>
+                        Integration Testing: <br>
+                        Integration testing aims to test multiple components, to see if they correctly work together. <br><br>
+                        System Testing: <br>
+                        System testing tests all components within the software to ensure that it means specifications that the software must have. It is important to get this stage of the testing process
+                        correct as this is almost the finished product that the end users will expect to see.<br><br>
+                        Acceptance Testing: <br>
+                        This is where the product will be tested to a point where testers can say that the product can go ahead and be deployed. The tests can range anywhere from finding grammatical errors
+                        to finding major security errors.<sup id="fourcf"><a href="#fourc" class="page-scroll" style="color:#000;">4</a></sup>
 
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">Testing Process</h2>
+                    <hr>
+                    <div class="col-md-8 col-md-offset-2">
+                      <p>
+                        The kind of development model chosen by management has a great effect on how testing is carried out.<br><br>
+                        Waterfall Development Model<br>
+                        It is very common practice to wait for the whole product to be developed before testing is carried out. Developers have no idea how good the software works until it nears the
+                        very end of the whole process. If it fails, it has to go back to the development and the process repeated.
+                        <br><br>
+                        Agile or Extreme Programming <br>
+                        Within these two processes, unit tests are coded first and tests done on components. It is expected to fail and as this is done again and again, the component will become better over
+                         time. As more components are built, the next level of testing is introduced whilst unit testing is still in progress for the rest of the project lifecycle. The goal is to increase
+                         the amount of testing effort done and do testing more often.<br><br>
+                        Top Down and Bottom Up<br>
+                      Top down is when testers test the highest level of components / systems and work their way down towards smaller components. Bottom up is the opposite. This is only helpful when the whole
+                      system has been developed and helps the reporting of testing progress in a quantitive form.<sup id="fivecf"><a href="#fivec" class="page-scroll" style="color:#000;">5</a></sup>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="automation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">Automation & Tools</h2>
+                    <hr class="light">
+                    <div class="col-md-8 col-md-offset-2">
+                      <p class="text-faded">
+                          More and more testing involves some sort of automation and there are tools out there to help. Although automation cannot completely reproduce results that manual testing can achieve,
+                          it can be useful for regression testing or very repetitive testing tasks.
+                          <br><br>
+                        Tools: <br><br>
+                        Program Monitors monitor part of or all of the code and allows testers complete control of the execution of the code and reports back.<br>
+                        Formatted dump or symbolic debugging allows testers to view errors at certain points of a program.
+                        <br>
+                        Automated Functional GUI testing tools repeat certain tests through the GUI.
+                        <br>
+                        Benchmarks allow testers to view performance data that could be essential to see if it meets time requirements etc.<br>
+                        Performance analysis helps analyse bad performance or poor resource usage within a program.<sup id="sixcf"><a href="#sixc" class="page-scroll" style="color:#000;">6</a></sup>
+
+
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="research">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading text-center">Research</h2>
+                    <hr>
+                    <div class="col-md-8 col-md-offset-2">
+                      <p>
+                        A lot of research has been done within software testing, mainly to do with automation and tools associated with it. The most recent project would be RE-COST -
+                        REducing the Cost of Oracles for Software Testing. As explained before, an oracle is "a mechanism for determining whether a test has passed or failed"<sup id="sevencf"><a href="#sevenc" class="page-scroll" style="color:#000;">7</a></sup>.
+                        Determining whether the correct behaviour is achieved that may be simple for humans but harder for the software to decide - this is called the oracle problem.<sup id="eightcf"><a href="#eightc" class="page-scroll" style="color:#000;">8</a></sup>
+                        What RE-COST will do is develop Search Based Optimisation techniques to solve the Oracle Cost problem.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="no-padding bg-primary" id="architecture">
         <div class="container-fluid">
             <h2 class="section-heading text-center" style="padding-top:20px;">SubTopics</h2>
@@ -197,8 +314,17 @@
                 <sup id="twoc"><a href="#twocf" class="page-scroll" style="color:#FFFFFF;">2 </a></sup>Wikipedia. (2016) Oracle (software testing. Retrieved 03, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
                 <br><br>
                 <sup id="threec"><a href="#threecf" class="page-scroll" style="color:#FFFFFF;">3 </a></sup>Wikiversity. (2016) Software testing/History of testing. Retrieved 03, 11, 2016 , from https://en.wikiversity.org/wiki/Software_testing/History_of_testing
+                <br><br>
+                <sup id="fourc"><a href="#fourcf" class="page-scroll" style="color:#FFFFFF;">4 </a></sup>Ulf Eriksson. (2016) Differences between the different levels of tests. Retrieved 05, 11, 2016 , from http://reqtest.com/uncategorized/differences-between-different-test-levels/
+                <br><br>
+                <sup id="fivec"><a href="#fivecf" class="page-scroll" style="color:#FFFFFF;">5 </sup>Wikipedia. (2016) Software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Software_testing#Testing_levels
+                  <br><br>
+                <sup id="sixc"><a href="#sixcf" class="page-scroll" style="color:#FFFFFF;">6 </sup>Wikipedia. (2016) Software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Software_testing#Testing_levels
+                  <br><br>
+                <sup id="sevenc"><a href="#sevencf" class="page-scroll" style="color:#FFFFFF;">7 </sup>Wikipedia. (2016) Oracle (software testing. Retrieved 05, 11, 2016 , from https://en.wikipedia.org/wiki/Oracle_(software_testing)
+                  <br><br>
+                  <sup id="eightc"><a href="#eightcf" class="page-scroll" style="color:#FFFFFF;">8 </sup>EPSRC. (2016) RE-COST: REducing the Cost of Oracles for Software Testing. Retrieved 05, 11, 2016 , from http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/I010165/1
 
-                <sup>4 </sup>En.wikipedia.org. (2016). History of software engineering. [online] Available at: https://en.wikipedia.org/wiki/History_of_software_engineering [Accessed 2 Nov. 2016].
             </p>
         </div>
     </aside>
@@ -220,3 +346,7 @@
 </body>
 
 </html>
+
+    Contact GitHub API Training Shop Blog About
+
+    © 2016 GitHub, Inc. Terms Privacy Security Status Help
